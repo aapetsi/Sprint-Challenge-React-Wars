@@ -49,7 +49,7 @@ const App = () => {
   const renderPeopleOrLoading =
     people.length === 0 ? (
       <Loader
-        type="TailSpin"
+        type="Circles"
         color="black"
         height={100}
         width={100}
