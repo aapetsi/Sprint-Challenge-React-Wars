@@ -13,6 +13,7 @@ const WrapperCard = styled.div`
 const HeaderTag = styled.h1`
   display: block;
   font-family: "Chilanka", "cursive";
+  color: #007bff;
 `;
 
 const Person = ({ person }) => {

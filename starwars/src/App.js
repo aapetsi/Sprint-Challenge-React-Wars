@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
+import Loader from "react-loader-spinner";
 import axios from "axios";
 import "./App.css";
 
 import People from "./components/People";
-import Loader from "./components/Loader";
 import Pages from "./components/Pages";
 
 const App = () => {
@@ -47,7 +47,17 @@ const App = () => {
 
   // render loading or people
   const renderPeopleOrLoading =
-    people.length === 0 ? <Loader /> : <People people={people} />;
+    people.length === 0 ? (
+      <Loader
+        type="TailSpin"
+        color="black"
+        height={100}
+        width={100}
+        timeout={3000}
+      />
+    ) : (
+      <People people={people} />
+    );
 
   return (
     <div className="App">
