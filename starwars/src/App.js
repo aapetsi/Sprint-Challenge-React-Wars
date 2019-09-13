@@ -29,10 +29,14 @@ const App = () => {
 
   console.log(people);
 
+  // render loading or people
+  const renderPeopleOrLoading =
+    people.length === 0 ? <p>Loading</p> : <People people={people} />;
+
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      <People />
+      {renderPeopleOrLoading}
     </div>
   );
 };
