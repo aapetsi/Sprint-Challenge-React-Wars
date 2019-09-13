@@ -1,10 +1,16 @@
 import React from "react";
+import Person from "../components/Person";
 import { shallow } from "enzyme";
 
-import App from "../App";
+const person = {
+  name: "John Doe",
+  films: [1, 2, 3, 4],
+  vehicles: [1, 2, 3],
+  starships: []
+};
 
 describe("Stretch goal", () => {
-  it("renders without crashing", () => {
-    shallow(<App />);
+  it("renders with correct data", () => {
+    shallow(<Person person={person} />);
   });
 });
