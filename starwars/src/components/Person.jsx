@@ -20,7 +20,9 @@ const Person = ({ person }) => {
     <div>
       <WrapperCard>
         <HeaderTag>{person.name}</HeaderTag>
-        <p>Number of Movies {person.films.length}</p>
+        <p>Number of Movies: {person.films.length}</p>
+        <p>Number of Vehicles: {person.starships.length}</p>
+        <p>Number of vehicles: {person.vehicles.length}</p>
       </WrapperCard>
     </div>
   );

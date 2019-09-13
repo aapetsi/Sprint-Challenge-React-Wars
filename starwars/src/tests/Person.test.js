@@ -1,9 +1,10 @@
 import React from "react";
-import { shallow } from "enzyme-adapter-react-16";
-import Person from "../components/Person";
+import { shallow } from "enzyme";
+
+import App from "../App";
 
 describe("Stretch goal", () => {
   it("renders without crashing", () => {
-    shallow(<Person />);
+    shallow(<App />);
   });
 });
