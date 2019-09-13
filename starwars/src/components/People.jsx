@@ -1,16 +1,25 @@
 import React from "react";
+import styled from "styled-components";
 import Person from "./Person";
 
+const WrapperDiv = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+`;
+
 const People = ({ people }) => {
-  const peopleArray = people.map(person => {
-    return <Person person={person} />;
+  const peopleArray = people.map((person, index) => {
+    return <Person key={index} person={person} />;
   });
-  console.log(people);
+
   return (
-    <div>
-      <h1>People component</h1>
+    <WrapperDiv>
+      <h1>Cool fun facts about starwars cast</h1>
       {peopleArray}
-    </div>
+    </WrapperDiv>
   );
 };
 
