@@ -15,7 +15,7 @@ const HeaderTag = styled.h1`
 `;
 
 const Person = ({ person }) => {
-  console.log(person);
+  // console.log(person);
   return (
     <div>
       <WrapperCard>
