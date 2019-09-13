@@ -18,7 +18,7 @@ const People = ({ people }) => {
   return (
     <WrapperDiv>
       <h1>Cool fun facts about starwars cast</h1>
-      {peopleArray}
+      <WrapperDiv>{peopleArray}</WrapperDiv>
     </WrapperDiv>
   );
 };
